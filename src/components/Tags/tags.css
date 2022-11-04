@@ -1,0 +1,26 @@
+.containerTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.containerTags__tag {
+  width: 115px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #FF6060;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .containerTags__tag {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=tags.css.map */

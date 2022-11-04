@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.header__logo {
+  max-width: 210px;
+}
+@media screen and (max-width: 550px) {
+  .header__logo {
+    max-width: 135px;
+  }
+}
+.header__navbar {
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 470px) {
+  .header__navbar {
+    gap: 10px;
+  }
+}
+.header__navbar__links {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 142.6%;
+  color: #FF6060;
+}
+.header__navbar__links.--active {
+  text-decoration-line: underline;
+}
+@media screen and (max-width: 450px) {
+  .header__navbar__links {
+    font-size: 1.6rem;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

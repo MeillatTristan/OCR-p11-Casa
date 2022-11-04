@@ -1,0 +1,26 @@
+.containerStars {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+@media screen and (max-width: 768px) {
+  .containerStars {
+    margin: 0;
+  }
+}
+.containerStars__star {
+  font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .containerStars__star {
+    font-size: 1.8rem;
+  }
+}
+.containerStars__star.--active {
+  color: #FF6060;
+}
+.containerStars__star.--inactive {
+  color: #E3E3E3;
+}
+
+/*# sourceMappingURL=stars.css.map */

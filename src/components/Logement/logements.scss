@@ -1,0 +1,29 @@
+@import "../../css/utils/variables";
+.logements {
+  margin-top: 43px;
+  padding: 56px;
+  border-radius: 25px;
+  background-color: $primary-grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+  column-gap: 20px;
+
+  @media screen and (max-width: 870px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 518px) {
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  &__card{
+    flex-basis: 30%;
+
+    @media screen and (max-width: 518px) {
+      flex-basis: auto; 
+    }
+  }
+}

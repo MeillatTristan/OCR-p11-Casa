@@ -1,0 +1,32 @@
+.logements {
+  margin-top: 43px;
+  padding: 56px;
+  border-radius: 25px;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+@media screen and (max-width: 870px) {
+  .logements {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 518px) {
+  .logements {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+.logements__card {
+  flex-basis: 30%;
+}
+@media screen and (max-width: 518px) {
+  .logements__card {
+    flex-basis: auto;
+  }
+}
+
+/*# sourceMappingURL=logement.css.map */

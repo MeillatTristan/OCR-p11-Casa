@@ -1,0 +1,85 @@
+@import "../../css/utils/variables";
+.carousel {
+position: relative;
+margin-top: 25px;
+height: 415px;
+overflow: hidden;
+border-radius: 25px;
+
+@media screen and (max-width: 668px) {
+  height: 255px;
+}
+
+  &__nav {
+    
+    &__left {
+      position: absolute;
+      left: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      z-index: 2;
+      cursor: pointer;
+
+      @media screen and (max-width: 992px) {
+        img {
+          height: 40px;
+        }
+      }
+      
+      @media screen and (max-width: 768px) {
+        img {
+          height: 20px;
+        }
+      }
+    }
+
+    &__right {
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      z-index: 2;
+      cursor: pointer;
+      
+      img {
+        rotate: 180deg;
+
+        @media screen and (max-width: 992px) {
+          height: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @media screen and (max-width: 450px) {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__numbers {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    color: white;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+}
